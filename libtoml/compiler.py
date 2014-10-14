@@ -30,7 +30,7 @@ def prepare_values(values):
                 k = "%s.%s" % (group, key)
             else:
                 k = key
-            
+
             yield [k, value]
 
 

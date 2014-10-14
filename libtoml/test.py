@@ -36,14 +36,14 @@ class ParseTest(unittest.TestCase):
 
     def test_integer(self):
         contents = """
-        key = 42 
+        key = 42
         """
         data = parse(contents)
         self.assertEqual(data["key"], 42)
 
     def test_integer_negative(self):
         contents = """
-        key = -42 
+        key = -42
         """
         data = parse(contents)
         self.assertEqual(data["key"], -42)
